@@ -5,22 +5,22 @@ import { ArrowRight } from "lucide-react"
 
 const articles = [
   {
-    title: "Искусство визуального сторителлинга",
-    category: "Дизайн",
+    title: "Как выбрать материал для таблички в офис",
+    category: "Советы",
     image: "/visual-storytelling-design-article.jpg",
   },
   {
-    title: "Как создать личный бренд онлайн",
-    category: "Стратегия",
+    title: "Фото на стекле: технология и уход",
+    category: "Технологии",
     image: "/personal-branding-digital-marketing.jpg",
   },
   {
-    title: "Тренды типографики 2025",
-    category: "Типографика",
+    title: "Что влияет на качество баннерной печати",
+    category: "Производство",
     image: "/typography-trends-modern-fonts.jpg",
   },
   {
-    title: "Минимализм в дизайне портфолио",
+    title: "Портрет на холсте как подарок: идеи и форматы",
     category: "Вдохновение",
     image: "/placeholder.svg?height=200&width=300",
   },

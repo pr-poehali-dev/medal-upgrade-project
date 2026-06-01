@@ -3,18 +3,18 @@ import { Check } from "lucide-react"
 
 const plans = [
   {
-    name: "Старт",
-    price: "1 200",
-    period: " руб/мес",
-    description: "Для личного портфолио",
-    features: ["5 страниц", "Свой домен", "Базовая аналитика", "Поддержка по email"],
+    name: "Малый заказ",
+    price: "от 500",
+    period: " руб",
+    description: "Таблички, режимники, небольшие вывески",
+    features: ["Адресные таблички", "Кабинетные таблички", "Режимники для магазинов", "Готово от 1 дня"],
   },
   {
-    name: "Про",
-    price: "2 900",
-    period: " руб/мес",
-    description: "Для растущих авторов",
-    features: ["Безлимит страниц", "Приоритет поддержки", "Расширенная аналитика", "Свой брендинг", "Работа в команде"],
+    name: "Комплексный",
+    price: "от 2 000",
+    period: " руб",
+    description: "Баннеры, фото, дизайн под ключ",
+    features: ["Баннеры любого формата", "Фото на стекле / холсте", "Разработка дизайна", "Срочное изготовление", "Бесплатная консультация"],
     popular: true,
   },
 ]
@@ -29,8 +29,8 @@ export function PricingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Простые и понятные цены</h2>
-          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Начните бесплатно, платите когда готовы.</p>
+          <h2 className="text-3xl md:text-5xl font-serif text-foreground">Честные цены без переплат</h2>
+          <p className="text-muted-foreground mt-4 max-w-md mx-auto">Рассчитаем точную стоимость под ваш заказ — просто напишите нам.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ export function PricingSection() {
                     : "bg-secondary text-foreground hover:bg-accent/30"
                 }`}
               >
-                Начать
+                Заказать
               </button>
             </motion.div>
           ))}

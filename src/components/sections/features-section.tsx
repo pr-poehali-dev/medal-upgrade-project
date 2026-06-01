@@ -86,11 +86,11 @@ export function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          Возможности
+          Наши услуги
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Typography Card */}
+          {/* Card 1 */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -101,16 +101,22 @@ export function FeaturesSection() {
             transition={{ duration: 0.2 }}
             data-clickable
           >
-            <div className="flex-1">
-              <TypeTester />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="text-6xl md:text-8xl"
+                animate={{ rotate: [0, 5, -5, 0] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              >
+                🪧
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Типографика</h3>
-              <p className="text-muted-foreground text-sm mt-1">Красивые шрифты, которые идеально масштабируются.</p>
+              <h3 className="font-serif text-xl text-foreground">Таблички и вывески</h3>
+              <p className="text-muted-foreground text-sm mt-1">Адресные, кабинетные, режимники — для любого бизнеса.</p>
             </div>
           </motion.div>
 
-          {/* Layouts Card */}
+          {/* Card 2 */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -121,16 +127,22 @@ export function FeaturesSection() {
             whileTap={{ scale: 0.96 }}
             data-clickable
           >
-            <div className="flex-1">
-              <LayoutAnimation />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="text-6xl md:text-8xl"
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                🖼️
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Макеты</h3>
-              <p className="text-muted-foreground text-sm mt-1">Гибкие сетки, которые адаптируются под контент.</p>
+              <h3 className="font-serif text-xl text-foreground">Фото на стекле и холсте</h3>
+              <p className="text-muted-foreground text-sm mt-1">Портреты, памятники, интерьер — с душой и деталями.</p>
             </div>
           </motion.div>
 
-          {/* Speed Card */}
+          {/* Card 3 */}
           <motion.div
             className="bg-secondary rounded-xl p-8 min-h-[280px] flex flex-col"
             initial={{ opacity: 0, y: 30 }}
@@ -141,12 +153,18 @@ export function FeaturesSection() {
             whileTap={{ scale: 0.96 }}
             data-clickable
           >
-            <div className="flex-1">
-              <SpeedIndicator />
+            <div className="flex-1 flex items-center justify-center">
+              <motion.span
+                className="text-6xl md:text-8xl"
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              >
+                🎨
+              </motion.span>
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-xl text-foreground">Скорость</h3>
-              <p className="text-muted-foreground text-sm mt-1">Молниеносная загрузка страниц для ваших гостей.</p>
+              <h3 className="font-serif text-xl text-foreground">Баннеры и дизайн</h3>
+              <p className="text-muted-foreground text-sm mt-1">Рекламные и информационные баннеры, графический дизайн.</p>
             </div>
           </motion.div>
         </div>
