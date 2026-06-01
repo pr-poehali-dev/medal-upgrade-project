@@ -9,7 +9,11 @@ const links = [
   { label: "Контакты", href: "#footer" },
 ]
 
-export function NavBar() {
+interface NavBarProps {
+  onOrder: () => void
+}
+
+export function NavBar({ onOrder }: NavBarProps) {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -58,14 +62,13 @@ export function NavBar() {
         ))}
       </nav>
 
-      <a
-        href="#pricing"
-        onClick={(e) => handleClick(e, "#pricing")}
+      <button
+        onClick={onOrder}
         className="bg-foreground text-background text-sm px-5 py-2 rounded-full hover:bg-foreground/80 transition-colors"
         data-clickable
       >
         Заказать
-      </a>
+      </button>
     </motion.header>
   )
 }
